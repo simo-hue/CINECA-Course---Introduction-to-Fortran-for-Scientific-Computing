@@ -1,0 +1,26 @@
+si lo so,
+è molto curioso il fatto che tu stia leggendo queste mie parole.
+
+Ma stai tranquillo.
+
+Simone
+
+
+Ti lascio anche un esempio del mio terminale: """simo@dhcp-v34-192-168-68-42 ESERCIZI MIEI % 
+simo@dhcp-v34-192-168-68-42 ESERCIZI MIEI % clear
+simo@dhcp-v34-192-168-68-42 ESERCIZI MIEI % ./a.out
+simo@dhcp-v34-192-168-68-42 ESERCIZI MIEI % gfortran es_stringhe.f90 
+clang: warning: overriding deployment version from '16.0' to '26.0' [-Woverriding-deployment-version]
+simo@dhcp-v34-192-168-68-42 ESERCIZI MIEI % ./a.out 
+ LUNGHEZZA STRINGA:          400
+ LUNGHEZZA EFFETTIVA:          400
+ numero di telefono: 
+^C
+simo@dhcp-v34-192-168-68-42 ESERCIZI MIEI % gfortran es_stringhe.f90
+clang: warning: overriding deployment version from '16.0' to '26.0' [-Woverriding-deployment-version]
+simo@dhcp-v34-192-168-68-42 ESERCIZI MIEI % ./a.out                 
+ LUNGHEZZA STRINGA:          400
+ LUNGHEZZA EFFETTIVA:            7
+ numero di telefono: 
+^C
+simo@dhcp-v34-192-168-68-42 ESERCIZI MIEI %"""

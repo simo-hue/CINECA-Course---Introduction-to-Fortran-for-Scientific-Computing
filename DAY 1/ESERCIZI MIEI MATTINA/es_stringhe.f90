@@ -2,7 +2,12 @@ PROGRAM stringhe
 
     IMPLICIT NONE
     CHARACTER(400) :: testo
+    CHARACTER(400) :: testo1
     CHARACTER(100) :: numero_telefono
+
+    testo1 = "  ciao. "
+    PRINT *, "LUNGHEZZA STRINGA: ", LEN(testo1)
+    PRINT *, "LUNGHEZZA EFFETTIVA: ", LEN_TRIM(testo1)
 
 
     testo = "    ciao, come stai? Te lo chiedevo per curiosità.       "
