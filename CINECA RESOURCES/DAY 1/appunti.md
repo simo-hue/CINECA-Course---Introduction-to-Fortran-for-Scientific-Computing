@@ -43,3 +43,12 @@ range() -> min e max
 huge() -> numero più grande
 tiny() -> numero più piccolo
 
+complessi definiti così: a=(3,4) con parte reale e complessa
+
+------- fortran legge per colonna e NON per riga come c o python ( SFRUTTRARE LA STRASPOSTA ) -------
+
+------- matrici -----
+TIPO, DIMENSION(riga, colonna) :: nome
+
+Stampo per colonna ( invece che una riga )
+

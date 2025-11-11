@@ -19,7 +19,7 @@ PROGRAM articolato
 END PROGRAM articolato
 
 
-SUBROUTINE SOMMA(r, a, b)
+SUBROUTINE SOMMA(r, a, b) ! Sarebbe meglio una funziona ( SUBROUTINE viene utilizzata per cose più complesse )
    IMPLICIT NONE
    REAL :: r, a, b
    
