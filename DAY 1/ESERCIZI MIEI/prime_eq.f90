@@ -35,9 +35,9 @@ PROGRAM prime_equazioni
    
    risultato = "Il risultato dell'equazione e': "
 
-   !PRINT *, TRIM(risultato), x
-   PRINT *, x
-   PRINT *, y
+   PRINT *, risultato(1:28), "prima = ((a+b)**2 + (3.0_8*c)**2)**(a/b) ", risultato(29:34), x
+   PRINT *, risultato(1:28), "seconda = ((a*b)/(c+ d) - (g)/(5*(h + x)))**1/r ", risultato(29:34), y
+   PRINT *, risultato(1:28), "terza = x + (y)/(z*a + b**2) ", risultato(29:34), y
    
    PRINT *, x + (y)/(z*a + b**2)
 
