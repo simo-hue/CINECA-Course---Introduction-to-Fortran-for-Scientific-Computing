@@ -1,0 +1,32 @@
+PROGRAM test_circle_area
+#FIXME
+  IMPLICIT NONE
+
+  ! Dichiarazione delle variabili
+  INTEGER(#FIXME) :: r_i4b   ! 4-byte integer
+  #FIXME       ! single precision
+  #FIXME       ! double precision
+  #FIXME       ! quadruple precision
+
+  REAL(dp), PARAMETER :: pi = 3.141592653589793_dp  ! definizione di pi con precisione doppia
+
+  ! Lettura del raggio
+  PRINT *, "Inserisci il raggio (intero):"
+  READ *, r_i4b
+
+  ! Conversione e calcolo area
+
+   #FIXME
+   #FIXME
+   #FIXME
+
+  ! Stampa risultati
+  PRINT *, "Area calcolata con single precision:", area_sp
+  PRINT *, "Area calcolata con double precision:", area_dp
+  PRINT *, "Area calcolata con quadruple precision:", area_qp
+
+  ! Mostra anche il raggio come intero a 4 byte
+  PRINT *, "Raggio come intero 4 byte:", r_i4b
+
+END PROGRAM test_circle_area
+
