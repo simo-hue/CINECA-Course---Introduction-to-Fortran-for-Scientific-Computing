@@ -1,4 +1,4 @@
-PROGRAM hypotenuse
+PROGRAM hypo
     IMPLICIT NONE 
 
     REAL :: a, b, hypotenuse
@@ -24,4 +24,4 @@ PROGRAM hypotenuse
 
    END SUBROUTINE calc_hypo        
 
-END PROGRAM hypotenuse    
+END PROGRAM hypo    

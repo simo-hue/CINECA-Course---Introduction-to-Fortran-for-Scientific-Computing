@@ -1,0 +1,1 @@
+NONE perchè mi fa impazzire gemini 2.5 che non risponde come voglio

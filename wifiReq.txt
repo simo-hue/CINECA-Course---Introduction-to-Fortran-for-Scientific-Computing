@@ -1,2 +1,12 @@
 Angela
 a.acocella@cineca.it
+
+--- 
+
+Caterina Caravita
+c.caravita@cineca.it
+
+---
+
+Moreno
+m.guernelli@cineca.it

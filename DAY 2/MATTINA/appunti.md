@@ -112,3 +112,97 @@ gfortran
 gfortran -c sub.f90 main.f90 -o eseguibile
 
 e posso già eseguire l'eseguibile che è stato generato
+
+
+---
+
+## MODULI
+
+Unità di programmazione che viene utilizzata per:
+• definire i dati e loro strutture;
+• definire tutte le operazioni operanti sui suddetti dati e strutture;
+• definire  altre  procedure  (sottoprogrammi)  utilizzate  dal  programma  (module 
+procedures)
+
+
+Anche utilizzate per fare DATA HIDING
+
+### sintassi
+
+MODULE nome
+
+IMPLICIT NONE
+
+END MODULE none
+
+---
+
+### importante
+Il modulo **NON ESEGUE**, ma solo per **APRIRE LA CONDIVISIONE DI VARIABILI/PROCEDURE**
+
+**BUONA NORMA:** mettere '[SAVE]' prima delle dichiarazione di dati da condividere
+
+---
+
+### chiamata
+
+PROGRAM nome1
+
+USE nomeModulo ( per Use Association avrò accesso alle dichiarazioni del modulo )
+...
+END PROGRAM nome1
+
+Può essere chiamato da più sotto-programmi ma NON può fare USE di se stesso
+
+---
+
+### precisazioni esplicite della precisione delle variabili
+
+- **SELECTED_INT_KIND(x) ->** tipo intero con x cifre significative
+- **SELECTED_REAL_KIND(x, y) ->** tipo REAL con x cifre di precisione ed esponente tra +y e -y
+
+può avere un CONTAINS, dopo il quale andiamo a definire procedure
+
+## restringere accesso al contenuto di un modulo
+- private -> non sarà disponibile ad unità di programmazione esterne al modulo ( procedure del modulo le vedono chiaramente )
+- public -> di default ( tutti vedono )
+- protected -> solamente read only
+
+## compilazione
+
+gfortan -c SEMPRE PRIMA IL MODULO main.f90 -o executable
+
+e viene generato un file .mod [ non sono uno standard e quindi diventa difficile la portabilità ]
+
+fpm ( fortran package manager ) vuole risolvere/aiutare in questo [ il pip per fortran ]
+
+---
+
+## interfaccia
+
+'''
+interface
+    body1
+    body2
+end interface
+'''
+
+posso andare ad inserire illimitate interfacce di procedure/subroutines
+
+è il chiamante che apre l'interfaccia
+
+solitamente vengono inserite nei moduli per essere ereditate dai moduli
+
+si possono aprire interfacce con altri linguaggi di programmazione come C o Python con iso_c_binding per trasformare una scrittura di una procedura in C in una in FORTRAN.
+
+
+---
+
+
+## LA VISIBILITÀ - Scope e ambito
+
+capacità di accedere ai contenuti, che dipende sia
+- dal punto in cui sono definite
+- dal tipo di attributi che io assegno ( PUBLIC - PRIVATE - PROTECTED )
+
+Quindi ho il contesto ( una sorta di scatola ) che rappresenta una **SCOPING UNIT**.
