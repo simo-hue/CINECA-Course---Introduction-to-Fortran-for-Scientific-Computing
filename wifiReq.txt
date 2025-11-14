@@ -1,4 +1,4 @@
-Angela
+Angela Acocella ( c )
 a.acocella@cineca.it
 
 --- 
@@ -8,5 +8,10 @@ c.caravita@cineca.it
 
 ---
 
-Moreno
+Moreno ( c )
 m.guernelli@cineca.it
+
+---
+
+Tommaso Gorni ( c )
+t.gorni@cineca.it
