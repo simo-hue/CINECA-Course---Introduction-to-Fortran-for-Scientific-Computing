@@ -1,5 +1,5 @@
 program database
-   use person_type, only : person_t, show
+   use person_type, only : person_t, show 
    use date_type, only : date_t 
    implicit none
 

@@ -16,7 +16,7 @@ contains
 
       print *, "name: ", x%name, " surname: ", x%surname, &
                " birthplace: ", x%birthplace, &
-               !" birthday: ", get_day(x%birthday), "/", get_month(x%birthday), "/", get_year(x%birthday)
+               !" birthday: ", x%birthday%get_day, "/", x%birthday%get_day, "/", x%birthday%get_day
                " birthday: ", x%birthday%d, "/", x%birthday%m, "/", x%birthday%y
    end subroutine show
 
